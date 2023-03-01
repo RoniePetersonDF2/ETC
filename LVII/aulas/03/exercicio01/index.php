@@ -1,14 +1,5 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['usuario'])){
-        header("location: login.php");
-        exit();
-    }
-    $usuario = $_SESSION['usuario'];
-    $nome = $usuario['nome'];
-?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +7,13 @@
     <title>Exercício 01</title>
 </head>
 <body>
-    <h1>Exercício com sessão</h1>
-    <p>Bem vindo usuarío: <?=$nome;?></p>
-    <a href="logout.php">Sair</a>
+    <h1>Enviado dados com formulário</h1>
+    <form action="resultado.php" method="post">
+        <label for="email">E-mail</label><br>
+        <input type="email" name="email" placeholder="Informe seu e-mail" autofocus><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" placeholder="Informe seu password"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>

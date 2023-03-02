@@ -1,4 +1,5 @@
 <?php
+$resultado = 0;
 if (isset($_GET['botaoEnviar'])) {
     $operacao = $_GET['operacao'];
     $valor1 = $_GET['valor1'];

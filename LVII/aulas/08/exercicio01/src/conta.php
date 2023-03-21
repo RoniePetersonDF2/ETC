@@ -1,9 +1,9 @@
 <?php
 
     class Conta {
-        protected $agencia;
-        protected $numeroConta;
-        protected $saldo;
+        private $agencia;
+        private $numeroConta;
+        private $saldo;
         
         
         public function __construct($agencia, $numeroConta, $saldo) 
@@ -16,5 +16,14 @@
         public function getSaldo() 
         {
             return $this->saldo;
+        }
+
+        public function sacar($valor)
+        {
+            if($valor<= $this->saldo) {
+                $this->saldo = $this->saldo - $valor;
+            } else {
+                echo "<br>Valor a sacar é maior que o saldo";
+            }
         }
     }

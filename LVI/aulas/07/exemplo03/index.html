@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 03</title>
+    <title>Exercício 03</title>
 </head>
 <body>
-    <h1>Trabalhando com formulários - Radio button e checkbox</h1>
+    <h1>Trabalhando com formulários - Radio e checkbox</h1>
     <form action="" method="get">
-        <h2>Radio button</h2>
-        <input type="radio" name="sexo" value="masculino" checked>Masculino
-        <input type="radio" name="sexo" value="feminino">Feminino
-        <input type="radio" name="sexo" value="outros">Outros
-        
-        <h2>Checkbox - Escolha o estilo musical</h2>
-        <input type="checkbox" name="estilo[]" value="Rock">Rock
-        <input type="checkbox" name="estilo[]" value="Sertanejo">Sertanejo
-        <input type="checkbox" name="estilo[]" value="Pop">Pop
-        <input type="checkbox" name="estilo[]" value="Eletronico">Eletronico
-        <br>
-        <input type="submit" name="enviar" value="Enviar">
-    </form>    
+        <h2>Radio buttons - Informe qual seu sexo</h2>
+        <input type="radio" name="sexo" id="sexo">Masculino
+        <input type="radio" name="sexo" id="sexo" checked>Femino
+        <input type="radio" name="sexo" id="sexo">Outros<br>
+        <h2>Checkbox - Selecione um estilo musical</h2>
+        <input type="checkbox" name="estilo[]" id="estilo">Rock
+        <input type="checkbox" name="estilo[]">Sertanejo
+        <input type="checkbox" name="estilo[]">Pop
+        <input type="checkbox" name="estilo[]" id="estilo">Eletrônica
+        <input type="checkbox" name="estilo[]" id="estilo">Brega
+        <input type="checkbox" name="estilo[]" id="estilo">Jazz
+        <input type="submit" value="Enviar" name="enviar">
+    </form>
 </body>
 </html>

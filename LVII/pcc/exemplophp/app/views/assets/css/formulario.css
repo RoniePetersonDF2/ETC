@@ -1,0 +1,96 @@
+        
+        .box{
+            margin: 10% auto;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+            padding: 15px;
+           
+            width: 50%;
+        }
+        /*fieldset{
+            border: 3px solid dodgerblue;
+        }*/
+        legend{
+            border: 1px solid #d36833;
+            padding: 10px;
+            text-align: center;
+            background-color: #d36833;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 30px;
+            width: 100%;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: #d36833;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background-color: #d36833;
+            width: 30%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            align-items: center;
+            opacity: 0.9;
+        }
+
+        .btn_alinhamento{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        #submit:hover{
+            opacity: 1;
+        }
+
+
+  
+        .main_cta .main_cta_content .main_cta_content_spacer_products{
+            margin:0 auto;
+            max-width: 1300px;
+            padding: 500px 40px;
+        }
+
+        .main_header_content_menu ul li a{
+            padding: 0 26px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color:#d36833;
+        }
+        

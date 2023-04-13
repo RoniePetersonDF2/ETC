@@ -1,0 +1,52 @@
+.main_stage {
+    width: 100%;
+   
+}
+
+.main_stage .main_stage_content {
+   max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    flex-basis:100%;
+    text-align: center;
+    font-weight: 300;
+  
+    
+  
+}
+
+.table tr th{
+    font-weight: 500;
+    font-size: 1.2em;
+    background-color: #d36833;
+    color: #fff;
+}
+
+.listagem_info {
+    display: flex;
+    text-align: center;
+    margin: 50px auto;
+    color: #fff;
+    font-size: 3em;
+    margin-top: 15px 0;
+
+}
+
+.btn{
+    background-color: #d36833;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    opacity: 0.9;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.space{
+   padding: 15px 0;
+}

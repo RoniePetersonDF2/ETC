@@ -4,6 +4,8 @@ DROP SCHEMA IF EXISTS escolabd;
 --  cria um banco de dados chamado escolabd.
 CREATE SCHEMA escolabd;
 
+USE escolabd;
+
 --  cria uma tabela chamada usuarios com os campos: id, email, password, nome e status.
 CREATE TABLE escolabd.usuarios (
     id          INTEGER PRIMARY KEY AUTO_INCREMENT,

@@ -9,9 +9,23 @@
 </head>
 <body>
     <h1>Formulários Login</h1>
-    <div class="div__error">
-        <p>Usuário ou senha inválidos.</p>
-    </div>
+    <?php
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+
+            // var_dump($_POST);exit;
+            if($email == "usuario@email.com" && $senha =="123456") {
+                $mensagem = "Seja bem vindo: $email";
+            } else {
+                $mensagem = "Usuário ou senha inválido.";	
+            }
+            echo "<div class='div__error'>
+                <p>$mensagem</p>
+            </div>";
+        }
+    ?>
+    
     <form action="" method="post">
         <label>E-mail</label><br>
         <input type="email" name="email" autofocus required><br>
@@ -20,5 +34,7 @@
         <br><br>     
         <input type="submit" value="Login" name="Login">
     </form>
+
+    
 </body>
 </html>

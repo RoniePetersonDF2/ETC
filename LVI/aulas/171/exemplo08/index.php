@@ -5,10 +5,8 @@
         # função date que cria uma data com valor recebido via $_GET.
         $data =  date($_GET['dataAtual']);
         echo 'Data atual: ' . $data;
-        echo '<hr>';
-    
-    }
-    
+        echo '<hr>';    
+    }    
  ?>
  <!DOCTYPE html>
  <html lang="pt-br">
@@ -25,5 +23,3 @@
     </form>
  </body>
  </html>   
-
- 
